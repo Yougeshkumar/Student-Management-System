@@ -31,3 +31,8 @@ It allows **Admins, Teachers, and Students** to manage courses, enrollments, gra
 ---
 
 ## 📂 Project Structure
+Student-Management-System/
+│── sms.sh # Main script
+│── GUI/ # GUI-related files
+│── README.md # Documentation
+│── sample_data/ # (Optional: Example CSV files)
