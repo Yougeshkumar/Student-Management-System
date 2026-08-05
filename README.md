@@ -1,201 +1,322 @@
 # 🎓 Student Management System
 
-A **Student Management System** developed using **Bash Shell Scripting** with a simple **GUI interface**. The application provides role-based access for **Administrators**, **Teachers**, and **Students**, enabling efficient management of courses, enrollments, attendance, and grades. All data is stored and managed using CSV files, making the project lightweight and easy to maintain.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-Shell_Scripting-4EAA25?logo=gnubash&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-Educational-orange)
+
+A **Student Management System** developed using **Bash Shell Scripting** with a modern **React + TypeScript GUI**. The system provides secure, role-based access for **Administrators**, **Teachers**, and **Students**, allowing efficient management of academic records, enrollments, attendance, and grades.
+
+The application combines a Bash-based backend with a responsive frontend, while storing data using lightweight CSV files.
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-This project demonstrates how Bash scripting can be used to build a complete management system with authentication, data persistence, and a user-friendly interface.
+The Student Management System is designed to simplify academic administration through a role-based interface.
 
-It is designed as an academic project to showcase scripting, file handling, and role-based access control.
+It enables administrators to manage users and courses, teachers to maintain attendance and grades, and students to access their academic records.
 
----
+This project demonstrates:
 
-## ✨ Features
-
-### 👨‍💼 Administrator
-- Create and manage teachers
-- Create and manage students
-- Create and manage courses
-- Create and manage semesters
-- Enroll students in courses
-- Assign or update course instructors
-- Delete student records
-- View all available records
-
-### 👩‍🏫 Teacher
-- Secure login authentication
-- View assigned courses
-- View enrolled students
-- Update attendance
-- Enter quiz marks
-- Enter mid-term marks
-- Enter final examination marks
-- Automatically maintain student records
-
-### 👨‍🎓 Student
-- Secure login authentication
-- View enrolled courses
-- Check attendance records
-- View quiz marks
-- View mid-term marks
-- View final examination marks
-- View overall grades
+- Bash Shell Scripting
+- Role-Based Authentication
+- CSV File Handling
+- React Frontend Development
+- TypeScript
+- File Management
+- GUI Design
 
 ---
 
-## 🛠️ Technologies Used
+# ✨ Features
 
-- **Bash Shell Scripting**
-- **Linux Shell**
-- **CSV File Storage**
-- **GUI Components**
-- **File Handling**
-- **Role-Based Authentication**
+## 👨‍💼 Administrator
+
+- Create Teachers
+- Create Students
+- Create Courses
+- Create Semesters
+- Assign Teachers to Courses
+- Enroll Students
+- Delete Students
+- View All Records
+- Manage Academic Data
 
 ---
 
-## 📂 Project Structure
+## 👩‍🏫 Teacher
+
+- Secure Login
+- View Assigned Courses
+- View Enrolled Students
+- Update Attendance
+- Enter Quiz Marks
+- Enter Mid-Term Marks
+- Enter Final Marks
+- Manage Student Performance
+
+---
+
+## 👨‍🎓 Student
+
+- Secure Login
+- View Enrolled Courses
+- Check Attendance
+- View Quiz Marks
+- View Mid-Term Marks
+- View Final Marks
+- View Overall Grades
+
+---
+
+# 🛠️ Technologies Used
+
+- Bash Shell Scripting
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- CSV File Storage
+- Role-Based Authentication
+- File Handling
+- Git & GitHub
+
+---
+
+# 📂 Project Structure
 
 ```text
 Student-Management-System/
 │
-├── sms.sh                 # Main application
-├── GUI/                   # GUI components
-├── data/                  # CSV database files
-├── sample_data/           # Sample datasets
-├── README.md              # Documentation
-├── .gitignore
-└── package files (if applicable)
+├── src/                     # React source code
+├── screenshots/             # Application screenshots
+│   ├── login.png
+│   ├── dashboard.png
+│   ├── teacher.png
+│   └── student.png
+│
+├── sms.sh                   # Bash backend script
+├── package.json
+├── package-lock.json
+├── vite.config.ts
+├── tsconfig.json
+├── tailwind.config.js
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
-### Prerequisites
+## Prerequisites
 
-- Linux / WSL / Git Bash
-- Bash Shell
-- GUI dependencies (if required)
+Before running the project, install:
 
-### Clone the Repository
+- Git
+- Node.js
+- npm
+- Bash (Linux / Git Bash / WSL)
+
+---
+
+## Clone the Repository
 
 ```bash
 git clone https://github.com/Yougeshkumar/Student-Management-System.git
 ```
 
-### Navigate to the Project
+---
+
+## Navigate to the Project
 
 ```bash
 cd Student-Management-System
 ```
 
-### Make the Script Executable
+---
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Run React Frontend
+
+```bash
+npm run dev
+```
+
+---
+
+## Run Bash Backend
 
 ```bash
 chmod +x sms.sh
-```
-
-### Run the Project
-
-```bash
 ./sms.sh
 ```
 
 ---
 
-## 🔐 User Roles
+# 🔐 User Roles
 
-| Role | Permissions |
-|-------|-------------|
-| Admin | Full system management |
-| Teacher | Manage student academic records |
-| Student | View academic information |
-
----
-
-## 💾 Data Storage
-
-The system stores all information using **CSV files**, including:
-
-- Student Records
-- Teacher Records
-- Course Information
-- Semester Details
-- Enrollment Records
-- Attendance
-- Marks and Grades
+| Role | Responsibilities |
+|------|------------------|
+| 👨‍💼 Admin | Manage students, teachers, courses and semesters |
+| 👩‍🏫 Teacher | Manage attendance and student marks |
+| 👨‍🎓 Student | View courses, attendance and grades |
 
 ---
 
-## 📸 Screenshots
+# 💾 Data Storage
 
-You can add screenshots here.
+The application stores information using CSV files.
 
-```text
-screenshots/
-├── login.png
-├── admin-dashboard.png
-├── teacher-dashboard.png
-└── student-dashboard.png
+The following records are maintained:
+
+- Student Details
+- Teacher Details
+- Course Details
+- Semester Information
+- Student Enrollments
+- Attendance Records
+- Quiz Marks
+- Mid-Term Marks
+- Final Examination Marks
+- Overall Grades
+
+---
+
+# 📸 Screenshots
+
+<h3 align="center">🔐 Login Screen</h3>
+
+<p align="center">
+<img src="screenshots/login.png" width="80%">
+</p>
+
+---
+
+<h3 align="center">📊 Dashboard</h3>
+
+<p align="center">
+<img src="screenshots/dashboard.png" width="80%">
+</p>
+
+---
+
+<h3 align="center">👨‍🎓 Student Panel</h3>
+
+<p align="center">
+<img src="screenshots/student.png" width="80%">
+</p>
+
+---
+
+<h3 align="center">👩‍🏫 Teacher Panel</h3>
+
+<p align="center">
+<img src="screenshots/teacher.png" width="80%">
+</p>
+
+---
+
+# 🎯 Key Highlights
+
+- ✅ Role-Based Authentication
+- ✅ Responsive GUI
+- ✅ CSV Database
+- ✅ Course Management
+- ✅ Attendance Tracking
+- ✅ Grade Management
+- ✅ Student Enrollment
+- ✅ Teacher Assignment
+- ✅ React + TypeScript Frontend
+- ✅ Bash Backend
+
+---
+
+# 📈 Future Improvements
+
+- MySQL/PostgreSQL Integration
+- REST API Backend
+- Docker Support
+- PDF Report Generation
+- Email Notifications
+- Cloud Deployment
+- Admin Analytics Dashboard
+- Student Profile Management
+- Mobile Responsive UI
+- Dark Mode
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+### Fork the repository
+
+```bash
+git fork
 ```
 
----
-
-## 📈 Future Improvements
-
-- MySQL database integration
-- Web-based dashboard
-- Student profile management
-- Email notifications
-- Report generation
-- PDF result cards
-- Advanced GUI
-- Cloud deployment
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a new branch
+### Create a branch
 
 ```bash
 git checkout -b feature-name
 ```
 
-3. Commit your changes
+### Commit your changes
 
 ```bash
-git commit -m "Add new feature"
+git commit -m "Added new feature"
 ```
 
-4. Push to GitHub
+### Push the changes
 
 ```bash
 git push origin feature-name
 ```
 
-5. Open a Pull Request
+### Create a Pull Request
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Yougesh Kumar**
+## Yougesh Kumar
 
-- 📧 Email: yougeshkumar8809@gmail.com
-- 💼 LinkedIn: https://linkedin.com/in/yougeshkumar22
-- 💻 GitHub: https://github.com/Yougeshkumar
+**AI & ML Engineer | Full Stack Developer**
+
+📧 Email  
+yougeshkumar8809@gmail.com
+
+💼 LinkedIn  
+https://linkedin.com/in/yougeshkumar22
+
+💻 GitHub  
+https://github.com/Yougeshkumar
 
 ---
 
-## 📄 License
+# ⭐ Support
 
-This project is developed for **educational and learning purposes**.
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and motivates further development.
 
 ---
+
+# 📄 License
+
+This project was developed for **educational and learning purposes**.
+
+© 2026 Yougesh Kumar. All Rights Reserved.
