@@ -199,5 +199,3 @@ git push origin feature-name
 This project is developed for **educational and learning purposes**.
 
 ---
-
-⭐ If you found this project useful, consider giving it a **Star** on GitHub!
